@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +24,8 @@ UI,Roboto,Helvetica,Arial;color:var(--text);background:transparent}
 .logo{width:120px;height:36px;object-fit:contain;background:#fff;border:1px solid var(--
 border);border-radius:12px;padding:6px}
 .title h1{margin:0;font-size:22px;font-weight:800;letter-spacing:.2px}
-.title .why{color:var(--ld-purple)} .title .ld{color:var(--ld-green)}.recruiter{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(-
+.title .why{color:var(--ld-purple)} .title .ld{color:var(--ld-green)}
+.recruiter{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(-
 -border);border-radius:16px;padding:8px 10px}
 .headshot{width:44px;height:44px;border-radius:50%;object-fit:cover;border:1px solid
 var(--border)}
@@ -43,14 +45,24 @@ var(--border)}
 .card .blurb{color:var(--muted);font-size:14px}
 .metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}
 @media (max-width:640px){.metrics{grid-template-columns:1fr}}
-.metric{border:1px solid var(--border);border-radius:18px;padding:22px;textalign:center;background:#fff;box-shadow:var(--shadow)}.metric .num{font-size:28px;font-weight:800}
+.metric{border:1px solid var(--border);border-radius:18px;padding:22px;textalign:center;background:#fff;box-shadow:var(--shadow)}
+.metric .num{font-size:28px;font-weight:800}
 .metric .lbl{color:var(--muted);font-size:14px;margin-top:6px}
 .two-col{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
 @media (max-width:840px){.two-col{grid-template-columns:1fr}}
 .testi{background:#fff;border:1px solid var(--border);borderradius:18px;padding:18px;box-shadow:var(--shadow)}
 .footer-cta{text-align:center;background:#fff;border:1px solid var(--border);borderradius:18px;padding:24px;box-shadow:var(--shadow);margin-top:22px}
 .note{font-size:12px;color:var(--muted)}
-.icon{display:inline-flex;align-items:center;justifycontent:center;width:28px;height:28px;border-radius:8px;background:#f3f4f6;color:#111}
+.icon{
+display:inline-flex;
+align-items:center;
+justify-content:center; /* <-- I fixed the typo here */
+width:28px;
+height:28px;
+border-radius:8px;
+background:#f3f4f6;
+color:#111
+}
 </style>
 </head>
 <body>
@@ -67,7 +79,8 @@ alt="loanDepot logo" />
 <div class="recruiter">
 <img class="headshot"
 src="https://via.placeholder.com/100x100.png?text=Headshot" alt="Devon Bartulis" />
-<div><div style="font-weight:700;font-size:14px">Devon Bartulis</div>
+<div>
+<div style="font-weight:700;font-size:14px">Devon Bartulis</div>
 <div class="note">Recruiter · loanDepot — NMLS 2630651</div>
 </div>
 </div>
@@ -85,22 +98,61 @@ deeper on your terms.</p>
 </section>
 <section style="margin-top:22px">
 <div class="grid">
-<div class="card"><div class="icon"> </div><h3>Pricing & Products</h3><div
-class="blurb">Transparent margins, competitive sheets, and niche products to win more
-deals.</div></div>
-<div class="card"><div class="icon"> </div><h3>Marketing Engine</h3><div
-class="blurb">Always-on content, co-branding, and automated nurture that
-converts.</div></div><div class="card"><div class="icon"> </div><h3>Technology & Tools</h3><div
-class="blurb">Frictionless LOS, digital 1003, and integrated condition
-management.</div></div>
-<div class="card"><div class="icon"> </div><h3>Leadership & Support</h3><div
-class="blurb">Access to decision-makers, responsive ops, and peer
-masterminds.</div></div>
-<div class="card"><div class="icon"> </div><h3>P&L / Branch
-Opportunities</h3><div class="blurb">Run your model with flexible compensation and
-local autonomy.</div></div>
-<div class="card"><div class="icon"> </div><h3>Culture & Growth</h3><div
-class="blurb">Recognition, learning paths, and a people-first ethos.</div></div>
+<div class="card">
+<div class="icon">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width:16px;height:16px;">
+<path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 11.219 12.768 11 12 11c-.768 0-1.536.219-2.121.659-.922.688-.922 1.914 0 2.602l.879.659z" />
+</svg>
+</div>
+<h3>Pricing & Products</h3>
+<div class="blurb">Transparent margins, competitive sheets, and niche products to win more deals.</div>
+</div>
+<div class="card">
+<div class="icon">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width:16px;height:16px;">
+<path stroke-linecap="round" stroke-linejoin="round" d="M10.34 3.94A2 2 0 0 1 12 2.25c.53 0 1.024.21 1.385.55l3.29 3.29a2 2 0 0 1 .55 1.385v8.05a2 2 0 0 1-.55 1.385l-3.29 3.29a2 2 0 0 1-1.385.55c-.53 0-1.024-.21-1.385-.55L7.05 14.85a2 2 0 0 1-.55-1.385v-2.93a2 2 0 0 1 .55-1.385l3.29-3.29z" />
+<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 8.25c.371 1.028.371 2.222 0 3.25m3 3.25c.676-1.791 1.014-3.71 1.014-5.663 0-1.953-.338-3.872-1.014-5.663" />
+</svg>
+</div>
+<h3>Marketing Engine</h3>
+<div class="blurb">Always-on content, co-branding, and automated nurture that converts.</div>
+</div>
+<div class="card">
+<div class="icon">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width:16px;height:16px;">
+<path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25" />
+</svg>
+</div>
+<h3>Technology & Tools</h3>
+<div class="blurb">Frictionless LOS, digital 1003, and integrated condition management.</div>
+</div>
+<div class="card">
+<div class="icon">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width:16px;height:16px;">
+<path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-3-5.479m-5.25 0a3 3 0 0 0-3 5.479 9.094 9.094 0 0 0 3.741.479M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-3-5.479m-5.25 0a3 3 0 0 0-3 5.479 9.094 9.094 0 0 0 3.741.479m-7.5 0a9.094 9.094 0 0 0-3.741-.479 3 3 0 0 0-3 5.479 9.094 9.094 0 0 0 3.741.479m15 0a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-3-5.479 9.094 9.094 0 0 0-3.741.479M4.5 12a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm7.5 0a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm7.5 0a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+</svg>
+</div>
+<h3>Leadership & Support</h3>
+<div class="blurb">Access to decision-makers, responsive ops, and peer masterminds.</div>
+</div>
+<div class="card">
+<div class="icon">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width:16px;height:16px;">
+<path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 0 1-2.247 2.118H6.622a2.25 2.25 0 0 1-2.247-2.118L3.75 7.5m8.25 3v6.75m0 0H12M12 14.25H9.75M12 14.25H14.25M3.75 7.5h16.5M3.75 7.5a2.25 2.25 0 0 1-2.25-2.25V4.5A2.25 2.25 0 0 1 3.75 2.25h16.5A2.25 2.25 0 0 1 22.5 4.5v.75a2.25 2.25 0 0 1-2.25 2.25" />
+</svg>
+</div>
+<h3>P&L / Branch Opportunities</h3>
+<div class="blurb">Run your model with flexible compensation and local autonomy.</div>
+</div>
+<div class="card">
+<div class="icon">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width:16px;height:16px;">
+<path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" />
+</svg>
+</div>
+<h3>Culture & Growth</h3>
+<div class="blurb">Recognition, learning paths, and a people-first ethos.</div>
+</div>
 </div>
 </section>
 <section class="metrics">
@@ -117,7 +169,8 @@ month.”<div class="note" style="margin-top:8px">A. Branch Manager ·
 Midwest</div></div>
 <div class="testi">“Faster disclosures and clean conditions helped us compress cycle
 times.”<div class="note" style="margin-top:8px">J. Senior LO · Great Lakes</div></div>
-</section><section class="footer-cta">
+</section>
+<section class="footer-cta">
 <h3 style="margin:0;font-size:22px">Let’s talk about your goals</h3>
 <p class="note" style="margin-top:6px">Confidential, no-pressure conversation tailored
 to your market and production level.</p>
